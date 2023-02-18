@@ -1,0 +1,6 @@
+# LMKD
+ro.config.low_ram=false
+
+# Project-Elixir Stuff
+ro.elixir.maintainer=kirisaki_vk
+org.elixir.device=POCO X3 NFC
