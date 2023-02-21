@@ -65,13 +65,13 @@ BOARD_KERNEL_CMDLINE += kpti=off cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DTBO := true
 
-TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
+TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 TARGET_KERNEL_VERSION := 4.14
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := silont
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/silont-clang-13
+TARGET_KERNEL_CLANG_VERSION := r450784e
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r450784e
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar AS=llvm-as NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LLVM=1 LLVM_IAS=1
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
